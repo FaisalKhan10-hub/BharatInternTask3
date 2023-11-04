@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://www.flaticon.com/search?word=student&type=sticker"> 
+    <title>Portfolio Website</title>
+    <style>
+        *{
+            padding:0px;
+            margin:0px;
+        }
+        .navbar{
+            background-color:black;
+            display:flex;
+            border-style:groove;
+            border-color: #d94498;
+        }
+        .navbar .faisal{
+            color:#d94498;
+            font-style: oblique;
+            padding:30px;
+            font-size:15px;
+            letter-spacing: 8px;
+        }
+        .navbar .faisal strong{
+            color:white;
+        }
+        .faisal h1:hover{
+            color:white;
+        }
+        .faisal strong:hover{
+            color:#d94498;
+        }
+        .navbarright{
+            display:flex;
+            justify-content:end;
+            align-items: center;
+        }
+        .navbarright a{
+            position:relative;
+            left:700px;
+            padding:10px;
+            font-style: oblique;
+            letter-spacing: 2px;
+            color:white;
+            text-decoration: none;
+        }
+        .navbarright a:hover{
+            border-radius: 10px;
+            border-style:ridge;
+            border-color: #d94498;
+            color:#d94498;
+        }
+
+        .body{
+            display:flex;
+            justify-content: center;
+            background-color: black;
+            border-style:groove;
+            border-color: #d94498;
+        }
+        .content{
+            height:300px;
+            width:1000px;
+            background-color:black;
+            border-radius: 20px;
+            margin-top:25px;
+            margin-bottom: 25px;
+            box-shadow:1px 1px 2px black, 0 0 20px #d94498,  0 0 5px #d94498;
+        }
+        .content:hover{
+            height:400px;
+            width:1100px;
+        }
+        .content h1{
+            color: #d94498;
+            font-size:30px;
+            font-style: oblique;
+            letter-spacing:5px;
+            display:flex;
+            justify-content: center;
+            align-content: center;
+        }
+        .content h2{
+            color:white;
+            font-size:20px;
+            font-style: oblique;
+            letter-spacing:3px;
+            display:flex;
+            justify-content: center;
+            align-content: center;
+            margin-bottom:10px;
+        }
+        .content h2 p{
+            color:#d94498;
+            margin-left:80px;
+            position:relative;
+            animation:move;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes move {
+            from{
+                left:0px;
+                color:black;
+            }
+            to{
+                left:6px;
+                color:#d94498;
+            }
+        }
+        .content h5{
+            color:white;
+            font-style: oblique;
+            margin-left:300px;
+            font-size:20px;
+        }
+        .content img{
+            height:200px;
+            width:200px;
+            display:flex;
+            position:relative;
+            bottom:260px;
+            left:10px;
+        }
+        .content img:hover{
+            height:250px;
+            width:250px;
+        }
+        .content h3{
+            color:white;
+            margin-left:330px;
+        }
+        .academics{
+            background-color: black;
+            border:outset;
+            border-color:#d94498;
+        }
+        .studies{
+            height:190px;
+            width:1000px;
+            background-color:black;
+            color:white;
+            margin-left:200px;
+        }
+        .studies h2{
+            display:flex;
+            justify-content: center;
+        }
+        .studies table{
+            display:flex;
+            justify-content:center;
+        }
+        .studies table td{
+            padding:10px;
+            border:inset;
+            border-radius:10px;
+            border-color:#d94498;
+            box-shadow:1px 1px 2px black, 0 0 10px #d94498,  0 0 5px #d94498;
+        }
+        .studies table td:hover{
+            color:#d94498;
+            font-size:15px;
+        }
+
+        .skills{
+            background-color:black;
+            border:outset;
+            border-color:#d94498;
+        }
+        .skills img{
+            height:100px;
+            width:100px;
+            margin-top:10px;
+            margin-bottom: 70px;
+            padding-left:145px;
+        }
+        img:hover{
+            height:120px;
+            width:120px;
+        }
+        .skills h2{
+            color:white;
+            display: flex;
+            justify-content: center;
+        }
+
+        .projects{
+            background-color:black;
+            border:outset;
+            border-color:#d94498;
+        }
+        .projects h2{
+            display:flex;
+            justify-content: center;
+            color:white;
+        }
+        .projects ul li a{
+           color:white; 
+           display:flex;
+           justify-content: center;
+        }
+        .projects a:hover{
+            color:#d94498;
+            font-size:22px;
+        }
+        .contacts{
+            background-color:black;
+            border:outset;
+            border-color:#d94498;
+
+        }
+        .contacts h2{
+            display:flex;
+            justify-content: center;
+            color:white;
+            margin-top:30px;
+        }
+
+        .contacts img{
+            height:30px;
+            width:30px;
+            margin-left:690px;
+            margin-top:10px;
+        }
+        .contacts img:hover{
+            height:40px;
+            width:40px;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <!-- .........................NAVBAR......................... -->
+
+    <div class="navbar">
+        <div class="faisal">
+            <h1><strong>Port</strong>folio</h1>
+        </div>
+        <div class="navbarright">
+            <a href="#navbar">Home</a>
+            <a href="#academics">Academics</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contacts">Contacts</a>
+        </div>
+    </div>
+
+      <!-- .........................BODY......................... -->
+
+      <div class="body">
+            <div class="content">
+                <br>
+                <h1><strong>My Introduction</strong></h1><br>
+                <h2>Hello everyone</h2>
+                <h2><p>Myself Faisal Khan</p></h2>
+                <h2><p>A curious and passionate <br>Frontend Developer and Java Developer.</p></h2>
+                <h3>“Developer is someone that turns coffee into code.”</h3><br>
+                <h5>I am a curious and passionate Java Developer and Frontend too. <br> I am currently in learning phase.</h5>
+                <img src="Programmericon.png" alt="">
+            </div>
+      </div>
+
+       <!-- .........................ACADEMICS......................... -->
+
+       <div class="academics" id="academics">
+        <br>
+            <div class="studies">
+                <h2>My Academics</h2><br>
+        <table style="width:100%">
+            <tr>
+              <td>High School</td>
+              <td>St.Xavier's High School</td>
+              <td>86.0%</td>
+            </tr>
+            <tr>
+              <td>Intermediate</td>
+              <td>Sun Shine Public School</td>
+              <td>92.0%</td>
+            </tr>
+            <tr>
+                <td>Graduation(B.Tech/IT)</td>
+                <td>JSS Academy Of technical Education</td>
+                <td>7.3(1st Sem)</td>
+              </tr>
+          </table>
+         </div>
+       </div>
+
+       <!-- .........................SKILLS......................... -->
+
+       <div class="skills" id="skills">
+        <br>
+        <h2> My Skills</h2><br>
+            <img src="java.png" alt="">
+            <img src="html.png" alt="">
+            <img src="css-3.png" alt="">
+            <img src="java-script.png" alt="">
+            <img src="sql-server.png" alt="">
+       </div>
+
+        <!-- .........................PROJECTS......................... -->
+
+        <div class="projects" id="projects">
+            <br>
+            <h2>My Projects</h2><br>
+            <ul>
+                <li><a href="https://faisalkhan10-hub.github.io/BharatIntern/">Temperature Converter</a></li><br>
+                <li><a href="https://faisalkhan10-hub.github.io/BharatIntern2/">Netflix Clone</a></li><br>
+                <li><a href="">Personal Portfolio Website</a></li><br>
+            </ul>
+        </div>
+
+
+         <!-- .........................CONTACTS......................... -->
+
+         <div id="contacts" class="contacts">
+            <h2>My Contacts</h2>
+            <div id="contact">
+            <p class="link"> <a href="mailto:faisal5189126@gmail.com"><img src="gmail.png" alt=""></a></p>
+            <p class="link"><a href="tel:98XYZ53389"><img src="telephone.png" alt=""></a></p>
+            <p class="link"><a href=" https://wa.me/qr/5SKKEWSTR4EOB1 "><img src="whatsapp.png" alt=""></a></p>
+        </div>
+
+</body>
+</html>
